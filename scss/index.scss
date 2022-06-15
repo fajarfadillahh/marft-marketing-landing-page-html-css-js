@@ -150,6 +150,12 @@ img {
   z-index: $z-fixed;
   transition: $transion-400;
 
+  // sticky header
+  &.sticky-action {
+    background-color: $white-color;
+    box-shadow: 0 2px 12px rgba($color: #000000, $alpha: 0.1);
+  }
+
   &__container {
     height: $header-height;
     display: flex;
