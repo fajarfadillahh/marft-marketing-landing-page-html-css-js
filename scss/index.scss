@@ -203,7 +203,7 @@ img {
   &__social {
     display: inline-flex;
     align-items: center;
-    gap: 1.5rem;
+    gap: 1rem;
     margin-top: 1.5rem;
 
     &-icon {
@@ -237,5 +237,26 @@ img {
   .show-menu {
     opacity: 1;
     transform: scaleY(1);
+  }
+}
+
+// ===== HOME SECTION =====
+.home {
+  padding: 7rem 0 4rem;
+  background-color: #f8f3ec;
+
+  &__data,
+  &__img {
+    justify-self: center;
+  }
+
+  &__buttons {
+    display: inline-flex;
+    align-items: center;
+    gap: 1rem;
+
+    &-rating {
+      height: 40px;
+    }
   }
 }
