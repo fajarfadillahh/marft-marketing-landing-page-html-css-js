@@ -372,3 +372,45 @@ img {
     cursor: pointer;
   }
 }
+
+// ===== FEATURE SECTION =====
+.feature {
+  background-color: #f8f3ec;
+
+  &__data {
+    text-align: center;
+  }
+
+  &__text.section-text {
+    margin-bottom: 0;
+  }
+
+  &__group {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 0.8fr));
+    gap: 2rem;
+    justify-content: center;
+  }
+
+  &__content {
+    display: grid;
+    gap: 1rem;
+    padding: 2.5rem;
+    background-color: #eae4dc;
+
+    &-title {
+      font-size: 36px;
+      font-weight: $font-bold;
+      color: $black-color;
+      line-height: $leading-title;
+      margin-bottom: $margin-1;
+    }
+
+    &-text {
+      font-size: 18px;
+      font-weight: $font-medium;
+      color: $grey-color;
+      margin-bottom: $margin-2;
+    }
+  }
+}
