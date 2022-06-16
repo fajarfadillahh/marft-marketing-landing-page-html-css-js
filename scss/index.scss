@@ -508,3 +508,24 @@ img {
     }
   }
 }
+
+// ===== CALLBACK SECTION =====
+.callback {
+  background-color: $black-color;
+
+  &__container {
+    gap: 1rem;
+  }
+
+  &__data {
+    text-align: center;
+  }
+
+  &__title,
+  &__text {
+    color: $white-color;
+  }
+  &__button {
+    justify-self: center;
+  }
+}
