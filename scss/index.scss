@@ -36,8 +36,8 @@ $z-normal: 1;
 $z-rooltip: 10;
 $z-fixed: 100;
 
-// transion
-$transion-400: 0.4s;
+// transition
+$transition-400: 0.4s;
 
 // line-height
 $leading-title: 100%;
@@ -148,7 +148,7 @@ img {
   left: 0;
   background-color: transparent;
   z-index: $z-fixed;
-  transition: $transion-400;
+  transition: $transition-400;
 
   // sticky header
   &.sticky-action {
@@ -182,7 +182,7 @@ img {
       background-color: $white-color;
       box-shadow: 0 0 12px rgba($color: #000000, $alpha: 0.1);
       border-radius: 2rem;
-      transition: $transion-400;
+      transition: $transition-400;
       opacity: 0;
       transform: scaleY(0);
       transform-origin: 0% 0%;
@@ -223,7 +223,7 @@ img {
       border-radius: 50%;
       font-size: 1.5rem;
       color: $black-color;
-      transition: $transion-400;
+      transition: $transition-400;
 
       &:hover {
         background-color: $black-color;
@@ -411,6 +411,100 @@ img {
       font-weight: $font-medium;
       color: $grey-color;
       margin-bottom: $margin-2;
+    }
+  }
+}
+
+// ===== TESTIMONIAL SECTION =====
+.testimoninal {
+  &__data {
+    text-align: center;
+  }
+
+  &__text.section-text {
+    margin-bottom: 0;
+  }
+
+  &__content {
+    display: grid;
+    gap: 1.5rem;
+    padding: 2rem;
+    border: 2px solid rgba($color: #6f6f6f, $alpha: 0.3);
+    transition: $transition-400;
+
+    &-rating {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    &-rate {
+      font-size: 18px;
+      font-weight: $font-semibold;
+    }
+
+    &-stars {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.2rem;
+    }
+
+    &-icon {
+      display: inline-flex;
+      font-size: 1rem;
+      color: $yellow-color;
+    }
+
+    &-comment,
+    &-profession {
+      font-size: 18px;
+      color: $grey-color;
+    }
+
+    &-profile {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    &-img {
+      width: 65px;
+    }
+
+    &-name {
+      font-size: 20px;
+      font-weight: $font-semibold;
+      margin-bottom: 4px;
+    }
+
+    &.swiper-slide-active {
+      box-shadow: 10px 10px 0 $black-color;
+    }
+  }
+
+  .swiper-wrapper {
+    padding: 3rem 0;
+  }
+
+  &__container {
+    overflow: hidden;
+
+    & .swiper-pagination {
+      position: initial;
+    }
+
+    & .swiper-pagination-bullet {
+      width: 10px;
+      height: 10px;
+      background-color: rgba($color: #000000, $alpha: 0.3);
+      transition: $transition-400;
+    }
+
+    & .swiper-pagination-bullet-active {
+      width: 2rem;
+      height: 10px;
+      background-color: rgba($color: #212529, $alpha: 1);
+      border-radius: 5rem;
     }
   }
 }
