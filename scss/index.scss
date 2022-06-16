@@ -293,3 +293,47 @@ img {
     align-items: center;
   }
 }
+
+// ===== ABOUT SECTION =====
+.about {
+  background-color: $black-color;
+
+  &__data,
+  &__img {
+    justify-self: center;
+  }
+
+  &__title,
+  &__item,
+  &__text {
+    color: $white-color;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    margin-bottom: $margin-1;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+    font-weight: $font-medium;
+
+    &-icon {
+      display: inline-flex;
+      padding: 0.1rem;
+      background-color: $yellow-color;
+      border-radius: 50%;
+      font-size: 1rem;
+      color: $black-color;
+    }
+  }
+
+  &__button {
+    display: inline-flex;
+  }
+}
