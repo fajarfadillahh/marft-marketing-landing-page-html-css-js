@@ -722,3 +722,33 @@ img {
     }
   }
 }
+
+// ===== MEDIA QUERIES =====
+// width 480px
+@media screen and (min-width: 480px) {
+  .section-title {
+    font-size: 52px;
+  }
+
+  .home__buttons-rating {
+    height: 50px;
+  }
+
+  .partner__title {
+    font-size: 42px;
+  }
+
+  .section-text,
+  .button,
+  .header__link,
+  .about__item,
+  .feature__content-text,
+  .testimoninal__content-comment,
+  .blog__content-text,
+  .footer__data-text,
+  .footer__list-title,
+  .footer__copy-rights,
+  .footer__copy-link {
+    font-size: 20px;
+  }
+}
