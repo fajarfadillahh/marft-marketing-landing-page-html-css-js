@@ -387,7 +387,7 @@ img {
 
   &__group {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 0.8fr));
+    grid-template-columns: repeat(auto-fit, minmax(220px, 0.9fr));
     gap: 2rem;
     justify-content: center;
   }
@@ -577,6 +577,148 @@ img {
       font-size: 18px;
       color: $grey-color;
       margin-bottom: $margin-1;
+    }
+  }
+}
+
+// ===== FOOTER SECTION =====
+.footer {
+  padding: 7rem 0 4rem;
+  background-color: $black-color;
+
+  &__container {
+    display: grid;
+    gap: 7rem;
+  }
+
+  &__group {
+    display: grid;
+    gap: 3.5rem;
+  }
+
+  &__data {
+    text-align: center;
+
+    &-title {
+      font-size: 28px;
+      font-weight: $font-bold;
+      color: $white-color;
+      margin-bottom: $margin-0-5;
+    }
+
+    &-text {
+      font-size: 18px;
+      width: 300px;
+      margin: 0 auto;
+      color: $white-color;
+      margin-bottom: $margin-1-5;
+    }
+
+    &-social {
+      display: inline-flex;
+      align-items: center;
+      gap: 1rem;
+      margin-top: 1.5rem;
+    }
+
+    &-icon {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      width: 45px;
+      height: 45px;
+      padding: 0.2rem;
+      border: 1.5px solid rgba($color: #6f6f6f, $alpha: 0.5);
+      border-radius: 50%;
+      font-size: 1.5rem;
+      color: $white-color;
+      transition: $transition-400;
+
+      &:hover {
+        background-color: $white-color;
+        color: $black-color;
+      }
+    }
+  }
+
+  &__form {
+    text-align: center;
+
+    &-title {
+      color: $white-color;
+    }
+
+    &-text {
+      color: $white-color;
+      margin: 0 auto;
+    }
+
+    &-direction {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.3rem;
+      border: 2px solid rgba($color: #6f6f6f, $alpha: 0.3);
+      border-radius: 1rem;
+      margin-top: 2rem;
+    }
+
+    &-input {
+      width: 100%;
+      padding: 1rem;
+      background-color: transparent;
+      font-size: 18px;
+      font-weight: $font-medium;
+      color: $white-color;
+
+      &::placeholder {
+        font-size: 18px;
+        font-weight: $font-medium;
+        color: $grey-color;
+      }
+    }
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, max-content));
+    gap: 2rem;
+
+    &-title {
+      font-size: 18px;
+      font-weight: $font-medium;
+      color: $grey-color;
+      margin-bottom: 4px;
+    }
+
+    &-text {
+      font-size: 32px;
+      color: $grey-color;
+    }
+  }
+
+  &__copy {
+    display: grid;
+    justify-self: center;
+    text-align: center;
+    gap: 1rem;
+
+    &-rights,
+    &-link {
+      font-size: 18px;
+      color: $grey-color;
+    }
+
+    &-link:hover {
+      color: $white-color;
+      text-decoration: underline;
+    }
+
+    &-list {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
     }
   }
 }
