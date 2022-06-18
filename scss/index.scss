@@ -293,6 +293,10 @@ img {
     justify-content: center;
     gap: 1rem;
   }
+
+  &__content-img {
+    width: 150px;
+  }
 }
 
 // ===== ABOUT SECTION =====
@@ -767,8 +771,14 @@ img {
     height: 50px;
   }
 
-  .partner__title {
-    font-size: 42px;
+  .partner {
+    &__title {
+      font-size: 42px;
+    }
+
+    &__content-img {
+      width: 200px;
+    }
   }
 
   .section-text,
